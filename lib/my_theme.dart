@@ -11,10 +11,15 @@ class MyTheme {
       appBarTheme: AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          centerTitle: true),
+          centerTitle: true,
+      iconTheme:IconThemeData(color: blackcolor)),
       textTheme: TextTheme(
           titleLarge: TextStyle(
-              fontSize: 30, fontWeight: FontWeight.w700, color: blackcolor)),
+              fontSize: 30, fontWeight: FontWeight.w700, color: blackcolor),
+          titleMedium: TextStyle(
+              fontSize: 25, fontWeight: FontWeight.w600, color: blackcolor),
+          titleSmall: TextStyle(
+              fontSize: 25, fontWeight: FontWeight.w400, color: blackcolor)),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
           selectedItemColor: blackcolor, unselectedItemColor: white,selectedIconTheme: IconThemeData(size:45 ),unselectedIconTheme: IconThemeData(size: 40)));
 }
